@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-    font-size: 34pt;
+    font-size: 6vh;
 }
 
 header {
@@ -16,8 +16,8 @@ header {
 input {
     margin-bottom: 20px;
     border-radius: 10px;
-    width: 200px;
-    height: 25px;
+    width: 15vmax;
+    height: 3.5vh;
 }
 
 main {
@@ -36,22 +36,22 @@ main {
 .pokemon {
     cursor: pointer;
     text-align: center;
-    height: 200px;
-    width: 200px;
-    margin: 10px;
+    height: 35vh;
+    width: 25%;
+    margin: 1vw;
     border-radius: 10px;
     transition: 0.2s;
 }
 
 p {
-    margin: 12px;
-    font-size: 17pt;
+    margin: 2vh;
+    font-size: 3.5vh;
     font-weight: 600;
     text-transform: capitalize;
 }
 
 span {
-    display: block;
+    font-size: 2.5vh;
 }
 
 .pokemon:hover {
@@ -60,11 +60,10 @@ span {
 }
 
 #info {
-    position: -webkit-sticky;
     position: sticky;
     top: 20px;
     width: 25%;
-    max-height: 320px;
+    height: 100%;
     border-radius: 10px;
     padding: 10px;
     transition: 0.2s;
@@ -73,6 +72,7 @@ span {
 }
 
 #info h2 {
+    font-size: 4vh;
     text-transform: capitalize;
     text-align: center;
 }
@@ -82,5 +82,33 @@ span {
 }
 
 #atributos {
-    line-height: 22px;
+    line-height: 1.5vmax;
+}
+
+img {
+    width: 18vh;
+}
+@media screen and (max-width: 1360px) {
+
+#sprite_tras {
+    display: none;
+}
+}
+
+@media screen and (max-width: 1170px) {
+    input {
+        text-align: center;
+        height: 2.5vmax;
+        width: 90%;
+    }
+    #info {
+        width: 75%;
+    }
+    .pokemon {
+        width: 100%;
+    }
+    #atributos {
+        line-height: 3vmax;
+    }
+    
 }
